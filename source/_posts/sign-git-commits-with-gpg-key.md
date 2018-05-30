@@ -26,7 +26,12 @@ tags:
 ```bash
 $ gpg --full-generate-key
 ```
-> 如果你的 Mac 上没有自带 gpg 命令，你可能需要先 `brew install gnupg pinentry-mac`
+> - 如果你的 Mac 上没有自带 gpg 命令，你可能需要先 `brew install gnupg pinentry-mac`
+> - 在 Ubuntu 16.04, gpg 1.4.20 中是
+> ```bash
+> $ gpg --gen-key
+> ```
+
 
 然后会有一些交互式的选项，选择的值依次是：
   - RSA and RSA (default)
@@ -48,7 +53,7 @@ $ gpg --list-secret-keys --keyid-format LONG
 /Users/hubot/.gnupg/secring.gpg
 ------------------------------------
 sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
-uid                          Hubot 
+uid                          Hubot
 ssb   4096R/42B317FD4BA89E7A 2016-03-10
 ```
 
@@ -76,9 +81,9 @@ $ git commit -S -m "awereghtyjui"
 
 此时会弹出输入密码的界面，输入密码正确即签名成功。
 
-> 如果在你的 Mac 上提示 
+> 如果在你的 Mac 上提示
 ```bash
-error: gpg failed to sign the data 
+error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 那么你需要将下面一行加入你的命令行配置文件，比如 `~/.zshrc` 或者 `~/.bash_profile`
