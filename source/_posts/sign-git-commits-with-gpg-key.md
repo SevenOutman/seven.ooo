@@ -31,7 +31,7 @@ $ gpg --full-generate-key
 > ```bash
 > $ gpg --gen-key
 > ```
-
+> 参考[这个帖子](https://askubuntu.com/questions/1019793/how-to-solve-gpg-invalid-option-full-generate-key)
 
 然后会有一些交互式的选项，选择的值依次是：
   - RSA and RSA (default)
