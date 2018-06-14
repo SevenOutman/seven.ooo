@@ -6,6 +6,8 @@ tags:
 
 使用 `prerender-spa-plugin` 在 Netlify 上对 Vue SPA 项目进行预渲染以优化 SEO。
 
+<!-- more -->
+
 最近一直在更新 Hubble 上的 [React vs. Vue 100k star race LIVE](https://hubble.js.org/react-vs-vue) 忙的不亦乐乎。
 昨天 Vue 与 React 的差距缩小到 500 以内，想着终于到了加上 Facebook 和 Twitter 分享按钮的时候了，可以吸引一些观众。
 
